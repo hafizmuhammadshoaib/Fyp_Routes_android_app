@@ -64,7 +64,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                            startActivity(new Intent(getApplicationContext(), SelectionActivity.class));
                         }else{
                             Toast.makeText(SignUpActivity.this,"Registration Error",Toast.LENGTH_LONG).show();
                         }
@@ -79,6 +79,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         }
         if(view == textViewSignIn){
             startActivity(new Intent(this, SignInActivity.class));
+            finish();
         }
     }
 }

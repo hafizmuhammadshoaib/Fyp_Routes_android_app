@@ -32,7 +32,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         firebaseAuth = FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser() != null){
             finish();
-            startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+            startActivity(new Intent(getApplicationContext(), SelectionActivity.class));
         }
     }
 
@@ -70,7 +70,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                         progressDialog.dismiss();
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                            startActivity(new Intent(getApplicationContext(), SelectionActivity.class));
                         }
                     }
                 });

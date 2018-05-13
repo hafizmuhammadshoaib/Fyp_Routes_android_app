@@ -9,26 +9,30 @@
 
     <ImageView
         android:id="@+id/baseImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/road"
-        android:layout_centerInParent="true"
-        />
-    <TextView
-        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ROUTES"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:layout_below="@id/baseImage"
+        android:src="@drawable/splash"
+        android:layout_centerInParent="true"
         />
+
     <ProgressBar
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/name"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/baseImage"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:text="Loading"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+
 
 </RelativeLayout>

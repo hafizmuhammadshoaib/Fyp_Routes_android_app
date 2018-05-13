@@ -21,7 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your Email"
-            android:id="@+id/editTextEmail"/>
+            android:id="@+id/editTextEmail"
+            android:textColor="#000"
+            android:padding="20dp"/>
 
         <EditText
             android:layout_margin="15dp"
@@ -29,13 +31,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your Password"
-            android:id="@+id/editTextPassword"/>
+            android:id="@+id/editTextPassword"
+            android:textColor="#000"
+            android:padding="20dp"/>
 
         <Button
             android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="SignIn"
+            style="@style/AppTheme"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="@drawable/round_button_green"
             android:id="@+id/buttonRegister"/>
 
         <TextView
@@ -43,6 +52,8 @@
             android:layout_height="wrap_content"
             android:text="Not have an account? Create here"
             android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20dp"
             android:id="@+id/textViewSignup"/>
     </LinearLayout>
 
@@ -54,7 +65,10 @@
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:text="Login" />
+        android:text="SignIn"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
 
 
 </RelativeLayout>

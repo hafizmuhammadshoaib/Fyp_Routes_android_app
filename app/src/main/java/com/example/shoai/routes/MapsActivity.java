@@ -142,4 +142,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        Intent intent = new Intent(MapsActivity.this,SelectionActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

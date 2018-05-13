@@ -32,12 +32,11 @@
 
         <activity
             android:name=".MapsActivity"
-            android:theme="@style/noActionBar"></activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".SignInActivity">
-
-        </activity>
-        <activity android:name=".SplashActivity"
+            android:theme="@style/noActionBar" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignInActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SelectionActivity"></activity>
     </application>
 
 </manifest>
